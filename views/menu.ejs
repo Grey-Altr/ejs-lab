@@ -8,8 +8,11 @@
 <body>
   <%- include('./partials/nav') %>
   <h1>Full Menu</h1>
-  <% menu.forEACH((item) => { %>
+  <% menu.forEach((item) => { %>
     <h2><%= item.name %></h2>
+    <h3>$<%= item.price %></h3>
+    <h3>Rating: <%= item.rating %></h3>
+    <h4><%= item.details %></h4>
   <% }); %>
 </body>
 </html>
